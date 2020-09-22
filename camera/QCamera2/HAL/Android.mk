@@ -35,7 +35,6 @@ endif
 LOCAL_CFLAGS += -DDEFAULT_DENOISE_MODE_ON
 
 LOCAL_C_INCLUDES := \
-    $(LOCAL_PATH)/../stack/common \
     frameworks/native/include/media/openmax \
     $(call project-path-for,qcom-display)/libgralloc \
     $(call project-path-for,qcom-display)/libqdutils \
@@ -54,7 +53,7 @@ LOCAL_CFLAGS += -DTARGET_TS_MAKEUP
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/tsMakeuplib/include
 endif
 
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_HEADER_LIBRARIES := camera_common_headers generated_kernel_headers
 LOCAL_SHARED_LIBRARIES := libcamera_client liblog libhardware libutils libcutils libdl libsensor
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libqdMetaData
 ifeq ($(TARGET_TS_MAKEUP),true)
@@ -69,3 +68,8 @@ LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := camera_common_headers
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/../stack/common
+include $(BUILD_HEADER_LIBRARY)

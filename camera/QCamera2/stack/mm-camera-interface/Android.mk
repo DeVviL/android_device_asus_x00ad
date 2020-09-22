@@ -17,10 +17,6 @@ endif
 
 LOCAL_CFLAGS += -D_ANDROID_
 
-LOCAL_COPY_HEADERS_TO := mm-camera-interface
-LOCAL_COPY_HEADERS += ../common/cam_intf.h
-LOCAL_COPY_HEADERS += ../common/cam_types.h
-
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/inc \
     $(LOCAL_PATH)/../common \
@@ -31,7 +27,7 @@ LOCAL_CFLAGS += -Wall -Wextra -Werror
 
 LOCAL_MODULE := libmmcamera_interface
 LOCAL_32_BIT_ONLY := true
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_HEADER_LIBRARIES := camera_common_headers generated_kernel_headers 
 LOCAL_SHARED_LIBRARIES := libdl libcutils liblog
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
