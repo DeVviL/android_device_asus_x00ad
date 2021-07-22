@@ -49,14 +49,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8916 \
-    Snap
-
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl
-
 # Display
 PRODUCT_PACKAGES += \
     pp_calib_data_booyi_OTM1287_720p_video_mode_dsi_panel.xml
