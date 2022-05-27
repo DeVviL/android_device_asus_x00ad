@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl
 
 # System Properties
-$(call inherit-product, device/wileyfox/crackling/system_prop.mk)
+$(call inherit-product, device/asus/x00ad/system_prop.mk)
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
@@ -141,4 +141,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # Call the proprietary setup
-$(call inherit-product, vendor/wileyfox/crackling/crackling-vendor.mk)
+$(call inherit-product, vendor/asus/x00ad/x00ad-vendor.mk)

@@ -1,4 +1,4 @@
-# Device configuration for Wileyfox Swift
+# Device configuration for asus Swift
 
 ## Spec Sheet
 
@@ -19,7 +19,7 @@
 
 ## Device Picture
 
-![Wileyfox Swift](http://s.4pda.to/YstumqO2cI57cw7o9jBDUMREsvGDbWqz0jTna7xTz2z1jqJHnONSI.jpg "Wileyfox Swift")
+![asus Swift](http://s.4pda.to/YstumqO2cI57cw7o9jBDUMREsvGDbWqz0jTna7xTz2z1jqJHnONSI.jpg "asus Swift")
 
 ## Copyright
 

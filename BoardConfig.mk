@@ -18,7 +18,7 @@
 # Inherit from msm8916-common
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/wileyfox/crackling
+DEVICE_PATH := device/asus/x00ad
 
 # Assertions
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
@@ -64,7 +64,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-TARGET_KERNEL_CONFIG := lineageos_crackling_defconfig
+TARGET_KERNEL_CONFIG := lineageos_x00ad_defconfig
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
@@ -81,4 +81,4 @@ include $(DEVICE_PATH)/twrp.mk
 endif
 
 # Inherit from proprietary files
--include vendor/wileyfox/crackling/BoardConfigVendor.mk
+-include vendor/asus/x00ad/BoardConfigVendor.mk

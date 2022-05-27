@@ -1,2 +1,2 @@
-require board=CRACKLING
-require version-bootloader=crackling-13-ge86e772
+require board=x00ad
+require version-bootloader=x00ad-13-ge86e772
